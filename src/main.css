@@ -1,0 +1,103 @@
+body {
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    background: #000;
+}
+
+#backgroundWrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 60px;
+}
+
+.bgImg {
+    width: 60vw;
+    height: 60vh;
+    max-width: fit-content;
+}
+
+#backgroundWrapper  button {
+    margin-top: 35px;
+}
+
+#gameContainer {
+    max-height: fit-content;
+    margin-top: 35px;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 10px;
+    display: none;
+    box-sizing: border-box;
+    border: 1px solid #fff;
+    overflow: hidden;
+}
+
+#messages {
+    height: 80%;
+    overflow-y: auto;
+    margin-bottom: 10px;
+}
+
+.message {
+    margin: 5px 0;
+}
+
+.userMessage {
+    color: #0f0;
+}
+
+.botMessage {
+    color: #ff0;
+}
+
+#messageInput {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    background: transparent;
+    border: none;
+    border-top: 1px solid #fff;
+    color: white;
+    font-size: 16px;
+}
+
+#startButton,
+#introButton {
+    padding: 15px 30px;
+    font-size: 20px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    color: white;
+    background: rgba(0, 0, 0, 0.8);
+    border: 1px solid #fff;
+    border-radius: 5px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+}
+
+#startButton:hover,
+#introButton:hover {
+    background: rgba(0, 0, 0, 1);
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.5);
+    transform: scale(1.05);
+}
+
+#introBlock {
+    width: 80%;
+    max-width: 600px;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    box-sizing: border-box;
+    border: 1px solid #fff;
+    margin-bottom: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    display: none;
+}
