@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>勇者冒險故事</title>
+    <link rel="stylesheet" href="./src/main.css">
+</head>
+
+<body>
+    <div id="introBlock">
+        <h2>歡迎來到勇者冒險故事</h2>
+        <p>在這個冒險中，你將扮演一位勇敢的勇者，探索危險的洞穴，對抗恐怖的怪物，並尋找傳說中的寶藏。每一個選擇都會影響你的命運。準備好開始冒險了嗎？</p>
+        <button id="startButton">開始冒險</button>
+    </div>
+    <div id="backgroundWrapper">
+        <img class="bgImg" id="bgImg" src="./img/mainIMG.png" alt="">
+        <button id="introButton">故事介紹</button>
+        
+        
+        <div id="gameContainer">
+            <div id="messages"></div>
+            <form id="messageForm">
+                <input type="text" id="messageInput" placeholder="輸入你的指令...">
+            </form>
+        </div>
+    </div>
+    <script src="./src/main.js"></script>
+    <script src="./src/changeImg.js"></script>
+</body>
+
+</html>
